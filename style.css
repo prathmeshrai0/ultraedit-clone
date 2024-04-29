@@ -1,0 +1,43 @@
+*{
+    margin: 0;padding: 0;
+}
+:root
+{
+
+    --redbor:2px solid red;
+    --blackbor:2px solid black;
+    --purplebor:2px solid rebeccapurple;
+    --greenbor:2px solid rgb(0, 255, 34);
+}
+nav{
+    border: var(--blackbor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: wrap;
+    
+}
+.navLinks{
+    border: var(--purplebor);
+   
+    
+}
+.logo{
+    
+    border: var(--redbor);
+   
+    flex-grow: 2;
+     text-align: center;
+ 
+    
+}
+.logo img{
+    height: 65px;
+}
+.mainLinks{
+    display: flex;
+    flex-grow: 1;
+    gap: 12px;
+    flex-wrap: wrap;
+}
