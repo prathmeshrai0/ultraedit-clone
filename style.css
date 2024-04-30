@@ -10,7 +10,6 @@
     --greenbor:2px solid rgb(0, 255, 34);
 }
 nav{
-    border: var(--blackbor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,14 +18,15 @@ nav{
     
 }
 .navLinks{
-    border: var(--purplebor);
-   
+   color: #292828;
     
+}
+.navLinks:hover{
+    color: #8e8a8a;
 }
 .logo{
     
-    border: var(--redbor);
-   
+  
     flex-grow: 2;
      text-align: center;
  
@@ -40,4 +40,39 @@ nav{
     flex-grow: 1;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+.con1{
+    border: var(--blackbor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.9em;
+    gap: 22px 0px;
+text-align: center;
+    
+}
+.con1 div img  {
+    border: var(--purplebor);
+    /* height: 55px; */
+    /* width: 55px; */
+     
+}
+.con1 div ,button {
+    border: var(--redbor);
+}
+#p1{
+
+    display: flex;
+    gap: 45px;
+}
+#p1:first-child {
+    font-size: 2em;
+    font-family: system-ui;
+}
+#p1>:first-child > span {
+    font-weight: bold;
+}
+#p2{
+    max-width: 65%;
 }
