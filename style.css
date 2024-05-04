@@ -43,23 +43,21 @@ nav{
 }
 
 .con1{
-    border: var(--blackbor);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.9em;
     gap: 22px 0px;
 text-align: center;
+margin-top: 82px;
     
 }
 .con1 div img  {
-    border: var(--purplebor);
     /* height: 55px; */
     /* width: 55px; */
      
 }
 .con1 div ,button {
-    border: var(--redbor);
 }
 #p1{
 
@@ -67,7 +65,7 @@ text-align: center;
     gap: 45px;
 }
 #p1:first-child {
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: system-ui;
 }
 #p1>:first-child > span {
@@ -75,4 +73,44 @@ text-align: center;
 }
 #p2{
     max-width: 65%;
+    font-size: 0.8em;
+}
+
+.con1 button{
+    padding: 15px;
+font-weight: bold;
+color: white;
+background-color: #00b6d1;
+}
+
+
+
+.con2{
+    border: var(--blackbor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 55vw;
+    position: relative;
+    left: 15.1vw;
+    word-wrap:break-word;
+    flex-wrap: wrap;
+}
+
+.con2 > img{
+    border: var(--greenbor);
+    width: 70px;
+    height: 70px;
+}
+ 
+
+.con2> #s1{
+    border: var(--redbor);
+    font-size: 1.85rem;
+}
+
+.con2 > #s2{
+    /* border: blue; */
+     
 }
