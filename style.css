@@ -49,7 +49,7 @@ nav{
     font-size: 1.9em;
     gap: 22px 0px;
 text-align: center;
-margin-top: 82px;
+margin-top: 122px;
     
 }
 .con1 div img  {
@@ -81,36 +81,79 @@ margin-top: 82px;
 font-weight: bold;
 color: white;
 background-color: #00b6d1;
+border-radius: 5px;
+border: none;
 }
 
 
 
 .con2{
-    border: var(--blackbor);
     display: flex;
-    justify-content: flex-start;
+  
     align-items: center;
     gap: 15px;
     width: 55vw;
     position: relative;
     left: 15.1vw;
-    word-wrap:break-word;
-    flex-wrap: wrap;
+    margin-top: 65px;
+
+    /* word-wrap:break-word; */
+    /* flex-wrap: wrap;   */
+    /* overflow-wrap: break-word; */
 }
 
 .con2 > img{
-    border: var(--greenbor);
     width: 70px;
     height: 70px;
 }
  
 
 .con2> #s1{
-    border: var(--redbor);
     font-size: 1.85rem;
-}
+        
+    }
+ 
 
-.con2 > #s2{
-    /* border: blue; */
-     
-}
+    .con3{
+        display: flex;
+        justify-content: center;
+        border: var(--blackbor);
+        flex-wrap: wrap;
+        width: 55vw;
+        gap: 15px;
+        position: relative;
+        left: 22.3vw;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 155px;
+        width:  250px;
+        border: var(--redbor);
+        background-color: rgb(241, 241, 241);
+        gap: 24px;
+    }
+
+    .boxes :first-child{
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+
+    .con3 button{
+        padding: 10px 0px;
+        width: 52%;
+        height: 23%;
+        border-radius: 5px;
+        border: none;
+        background-color: #5cb85c;
+        color: white;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+   .con3 button:hover{
+    background-color: #83c083;
+   }
