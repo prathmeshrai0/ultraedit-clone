@@ -414,14 +414,35 @@ footer .box .svgIcon svg {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background-color: #007bff;
+    background-color: #00b6d1;
     color: #fff;
     border: none;
-    border-radius: 50%;
-    padding: 10px;
+    font-size: 30px;
+    padding: 14px 14px;
     cursor: pointer;
+    animation: scrollTopShow 0.7s  ease-in  forwards ;
+}
+@keyframes scrollTopShow {
+    0%{
+right: 0px;
+opacity: 0;
+    }
+    100%{
+        right: 20px;
+        opacity: 1;
+    }
+}
+@keyframes scrollTopHide{
+    0%{
+right: 20px;
+opacity: 1;
+    }
+    100%{
+        right: 0px;
+        opacity: 0;
+    }
 }
 
 #scrollToTopBtn:hover {
-    background-color: #0056b3;
+    background-color: #018fa5;
 }

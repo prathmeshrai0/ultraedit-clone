@@ -204,24 +204,41 @@
         </div>
         <p>©2024 UltraEdit. All rights reserved</p>
     </footer>
-    <button id="scrollToTopBtn">Scroll to Top</button>
+    <button id="scrollToTopBtn">👆</button>
 <script>
     window.addEventListener('scroll', function() {
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    if (window.pageYOffset > 100) { // Adjust this value to show the button after scrolling down a certain amount
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > 715) { // Adjust this value to show the button after scrolling down a certain amount
+        scrollToTopBtn.style.animation = ''
         scrollToTopBtn.style.display = 'block';
-    } else {
-        scrollToTopBtn.style.display = 'none';
+        console.log('yes');
+    } 
+    else if (window.pageYOffset<715) {
+        scrollToTopBtn.style.animation = 'scrollTopHide 0.7s  ease-in  forwards'
+        console.log('no');
+         
+            
+           
+    
     }
 });
-
 document.getElementById('scrollToTopBtn').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
+        window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
 
+        
+        // console.log('hellow');
+        // window.addEventListener('scroll',function (){
+        
+        //     console.log(window.pageYOffset);
+        //     if(window.pageYOffset>800){
+        //         window.scrollTo({top:0,behavior:"instant"})
+        //     }
+        // })
 </script>
 </body>
 
